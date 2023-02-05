@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <listeners>
+        <listener class-name="extentlisteners.ExtentListeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+
+    <test name="Regression Suite" >
+        <classes>
+            <class name="web.test.SoldOutProduct"/>
+            <class name="web.test.ItemAddedToCartPopUp"/>
+            <class name="web.test.YourCart"/>
+            <class name="web.test.Information"/>
+        </classes>
+    </test>
+</suite>
