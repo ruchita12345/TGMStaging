@@ -18,7 +18,7 @@ public class TestBase {
     public TestBase() {
         properties = new Properties();
         try {
-            FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/config/config.properties");
+            FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/config/config.properties");
             properties.load(file);
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
